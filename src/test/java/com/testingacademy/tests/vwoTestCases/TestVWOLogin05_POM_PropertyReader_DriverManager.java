@@ -1,27 +1,26 @@
 package com.testingacademy.tests.vwoTestCases;
 
+import com.testingacademy.base.CommonToAllTest;
+import com.testingacademy.driver.DriverManager;
 import com.testingacademy.pages.pageObjectModel.Vwo.DashboardPage;
 import com.testingacademy.pages.pageObjectModel.Vwo.LoginPage;
 import com.testingacademy.utils.PropertiesReader;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class TestVWOLogin04_POM_PropertyReader {
+public class TestVWOLogin05_POM_PropertyReader_DriverManager extends CommonToAllTest {
 
     @Owner("SHOBHA")
     @Description("Verify that invalid creds give error message")
     @Test
     public void testLoginNegativeVWO(){
-        WebDriver driver = new EdgeDriver();
 
 
-        LoginPage login = new LoginPage(driver);
+        LoginPage login = new LoginPage(DriverManager.getDriver());
         String error_message_text = login.loginToVWOInvalidCreds(PropertiesReader.readKey("invalid_username"),PropertiesReader.readKey("invalid_password"));
 
 
@@ -42,13 +41,12 @@ public class TestVWOLogin04_POM_PropertyReader {
     @Test
 
     public void testLoginPositiveVWO(){
-        WebDriver driver = new EdgeDriver();
 
 
-        LoginPage login = new LoginPage(driver);
+        LoginPage login = new LoginPage(DriverManager.getDriver());
         login.loginToVWOvalidCreds(PropertiesReader.readKey("valid_username"),PropertiesReader.readKey("valid_password"));
 
-        DashboardPage dashboard = new DashboardPage(driver);
+        DashboardPage dashboard = new DashboardPage(DriverManager.getDriver());
         String usernameLoggedIn = dashboard.loggedInUserName();
 
         //assertj assertion

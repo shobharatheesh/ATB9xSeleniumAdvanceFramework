@@ -1,4 +1,7 @@
 package com.testingacademy.base;
 
-public class BaseTest {
+public class CommonToAllPages {
+
+
+
 }
