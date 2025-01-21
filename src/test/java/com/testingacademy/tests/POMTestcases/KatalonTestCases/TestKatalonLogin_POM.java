@@ -1,4 +1,4 @@
-package com.testingacademy.tests.KatalonTestCases;
+package com.testingacademy.tests.POMTestcases.KatalonTestCases;
 
 import com.testingacademy.pages.pageObjectModel.katalonCura.LoginPage;
 import io.qameta.allure.Description;

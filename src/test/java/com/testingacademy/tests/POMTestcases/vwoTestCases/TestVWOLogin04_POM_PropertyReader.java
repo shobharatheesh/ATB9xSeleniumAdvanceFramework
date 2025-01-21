@@ -1,7 +1,7 @@
-package com.testingacademy.tests.vwoTestCases;
+package com.testingacademy.tests.POMTestcases.vwoTestCases;
 
-import com.testingacademy.pages.pageObjectModel.vmo01_normal.DashboardPage;
 import com.testingacademy.pages.pageObjectModel.vmo01_normal.LoginPage;
+import com.testingacademy.pages.pageObjectModel.vmo02.improved.pom.DashboardPage;
 import com.testingacademy.utils.PropertiesReader;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;

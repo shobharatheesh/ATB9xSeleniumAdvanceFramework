@@ -1,4 +1,4 @@
-package com.testingacademy.tests.KatalonTestCases;
+package com.testingacademy.tests.POMTestcases.KatalonTestCases;
 
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;

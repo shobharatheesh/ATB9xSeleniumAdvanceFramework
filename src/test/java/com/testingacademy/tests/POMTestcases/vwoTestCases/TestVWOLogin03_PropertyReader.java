@@ -1,4 +1,4 @@
-package com.testingacademy.tests.vwoTestCases;
+package com.testingacademy.tests.POMTestcases.vwoTestCases;
 
 import com.testingacademy.utils.PropertiesReader;
 import io.qameta.allure.Description;

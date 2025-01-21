@@ -1,4 +1,4 @@
-package com.testingacademy.tests.vwoTestCases;
+package com.testingacademy.tests.POMTestcases.vwoTestCases;
 
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;

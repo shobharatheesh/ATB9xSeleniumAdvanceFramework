@@ -55,6 +55,10 @@ public class CommonToAllPage {
        return getDriver().findElement(by).getText();
     }
 
+    public String getText(WebElement by){
+        return by.getText();
+    }
+
     public void custom_wait()
     {
         try {
