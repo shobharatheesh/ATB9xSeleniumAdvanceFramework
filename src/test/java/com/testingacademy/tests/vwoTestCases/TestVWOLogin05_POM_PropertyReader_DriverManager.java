@@ -2,8 +2,8 @@ package com.testingacademy.tests.vwoTestCases;
 
 import com.testingacademy.base.CommonToAllTest;
 import com.testingacademy.driver.DriverManager;
-import com.testingacademy.pages.pageObjectModel.Vwo.DashboardPage;
-import com.testingacademy.pages.pageObjectModel.Vwo.LoginPage;
+import com.testingacademy.pages.pageObjectModel.vmo01_normal.DashboardPage;
+import com.testingacademy.pages.pageObjectModel.vmo01_normal.LoginPage;
 import com.testingacademy.utils.PropertiesReader;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;

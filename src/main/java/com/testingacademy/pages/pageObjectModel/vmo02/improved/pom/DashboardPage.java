@@ -1,9 +1,10 @@
-package com.testingacademy.pages.pageObjectModel.Vwo;
+package com.testingacademy.pages.pageObjectModel.vmo02.improved.pom;
 
+import com.testingacademy.base.CommonToAllPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class DashboardPage {
+public class DashboardPage extends CommonToAllPage {
 
     WebDriver driver;
 
@@ -22,12 +23,8 @@ public class DashboardPage {
 
     public String loggedInUserName()
     {
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        return driver.findElement(userNameOnDashboard).getText();
+       visibilityOfElement(userNameOnDashboard);
+        return getText(userNameOnDashboard);
     }
 
 

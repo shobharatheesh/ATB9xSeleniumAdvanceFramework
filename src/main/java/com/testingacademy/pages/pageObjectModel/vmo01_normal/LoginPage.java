@@ -1,4 +1,4 @@
-package com.testingacademy.pages.pageObjectModel.Vwo;
+package com.testingacademy.pages.pageObjectModel.vmo01_normal;
 
 import com.testingacademy.utils.PropertiesReader;
 import org.openqa.selenium.By;

@@ -6,14 +6,16 @@ import org.testng.annotations.BeforeMethod;
 
 public class CommonToAllTest {
 
+        //driverManager code  is available here
+
         @BeforeMethod
         public void setUp(){
-                DriverManager.init();
+                DriverManager.init(); //when sriver starts initialize
         }
 
         @AfterMethod
         public void tearDown(){
-                DriverManager.down();
+                DriverManager.down(); //when driver ends its stops
         }
 
 
