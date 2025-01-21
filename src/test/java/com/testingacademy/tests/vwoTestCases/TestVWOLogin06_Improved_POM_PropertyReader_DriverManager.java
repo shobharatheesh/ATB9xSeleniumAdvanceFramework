@@ -50,7 +50,7 @@ public class TestVWOLogin06_Improved_POM_PropertyReader_DriverManager extends Co
         String usernameLoggedIn = dashboard.loggedInUserName();
 
         //assertj assertion
-        assertThat(usernameLoggedIn).isNotBlank().isNotEmpty().isNotNull();
+         assertThat(usernameLoggedIn).isNotBlank().isNotEmpty().isNotNull();
 
         //testng asserting
         Assert.assertEquals(usernameLoggedIn,PropertiesReader.readKey("expected_username"));
