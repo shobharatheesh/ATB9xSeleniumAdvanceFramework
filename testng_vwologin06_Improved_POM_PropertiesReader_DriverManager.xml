@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="D:\practice\ATB9xSeleniumAdvanceFramework">
         <classes>
-            <class name="com.testingacademy.tests.vwoTestCases.TestVWOLogin06_Improved_POM_PropertyReader_DriverManager">
+            <class name="com.testingacademy.tests.POMTestcases.vwoTestCases.TestVWOLogin05_POM_PropertyReader_DriverManager">
             </class>
         </classes>
     </test>
